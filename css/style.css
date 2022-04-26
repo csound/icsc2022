@@ -1,0 +1,533 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    }
+    
+    h1, h2, h3, h4 {
+    color: rgb(0, 0, 0);
+    }
+
+    h3.day {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 150%;
+    }
+    
+    h4.concert {
+    font-size: 150%;
+    }
+    
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    div.program  {
+    margin-left: 2em;
+    margin-bottom: 3em;
+    }
+    
+    div.piece {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    }
+    
+    p.piece_title {
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: bold;
+    }
+    
+    p.piece_subtitle {
+    margin-bottom: 0;
+    text-align: left;
+    font-style: italic;
+    }
+    
+    div.player {
+      margin-top: 1.5em;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 2em;
+      text-align: center;
+    }
+    
+    .player p {
+      margin-top: 0.5em;
+      margin-bottom: 2em;
+      text-align: center;
+      font-size: 90%;
+      color: #555;
+    }
+    
+    audio {
+      height: 1.5em;
+    }
+    
+    
+    .notes {
+      margin-top:0;
+      margin-bottom:0.2em;
+      margin-left: 2em;
+      margin-right: 2em;
+      color: #666;
+    }
+    
+    .year {
+      margin-left: 1.5em;
+      font-weight: normal;
+    }
+    
+    .pdf {
+      margin-left: 1.5em;
+    }
+    
+    span.pdf img {
+      width: 20px;
+    }
+    
+    p {
+      text-align: justify;
+      font-size: 18px;
+    }
+    
+    p.venue {
+      font-size: 120%;
+      text-align: left;
+      margin-bottom: 1px;
+    }
+    
+    p.day {
+      font-size: 115%;
+      text-align: left;
+      margin-bottom: 0.2em;
+    }
+    
+    p.hall {
+      font-size: 115%;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    
+    p.paper {
+      font-size: 125%;
+      font-weight: bold;
+      margin-bottom: 1px;
+      margin-top: 2em;
+      text-align: left;
+    }
+    
+    p.author {
+      font-size: 115%;
+      text-align: left;
+    }
+
+    ul li{
+      font-size: 18px;
+    }
+    
+    dt {
+      margin-left: 2em;
+    }
+    
+    dd {
+      margin-left: 4em;
+      margin-bottom: 1em;
+    }
+    
+    .navbar {
+      background:white;
+      margin-bottom: 0;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
+    }
+
+    .fixed {
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      width:100%;
+      z-index:99;
+      background:white;
+    }
+    
+    .navbar-brand {
+      padding: 5px 20px;
+      max-width: 210px;
+    }
+    
+    .navbar-nav {
+      float: right;
+    }
+    
+    .date {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    
+    .box {
+      font-size: 70%;
+      border-style: solid;
+      border-width: 1px;
+      padding: 0 3px;
+      margin-left: 1em;
+    }
+    
+    .map {
+     margin-top: 2em;
+     border: 0;
+     height: 450px;
+     width: 60%;
+    }
+    
+    sup {
+      font-size: 60%;
+    }
+    
+    .front-header {
+      background: url('../img/ait_eng1.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #202020;
+      padding: 100px 0;
+      margin-bottom: 60px;
+      color: #FFF;
+    }
+    
+    .front-header h1 {
+      color: #FFF;
+    }
+    /*change this to bgimg*/
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+      position: relative;
+      opacity: 0.65;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bgimg-1 {
+      background-image: url("../img/ait_eng2.jpeg");
+      min-height: 800px;
+    }
+    
+    .bgimg-2 {
+      background-image: url("../img/code.JPG");
+      min-height: 400px;
+    }
+
+    .bgimg-3 {
+      background-image: url("../img/Athlone_castle.jpeg");
+      min-height: 400px;
+    }
+
+    .bgimg-4 {
+      background-image: url("../img/Waveform.JPG");
+      min-height: 400px;
+    }
+
+    .bgimg-5 {
+      background-image: url("../img/Cabbage_mince.JPG");
+      min-height: 400px;
+    }
+    
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 65px;
+      letter-spacing: 10px;
+    }
+    
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        background-attachment: scroll;
+  }
+} 
+    .page-header h1 {
+      color: rgb(255, 255, 255);
+    }
+    
+    @media (max-width: 1260px) {
+      .front-header {
+        padding: 20px 0;
+      }
+    }
+    
+    @media (max-width: 800px) {
+      .front-header {
+        padding: 10px 0;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .front-header {
+        padding: 0;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .page-header {
+        margin: 0;
+        padding: 10px 0;
+        height: 100px;
+      }
+    }
+    
+    .support .center-block {
+      max-height: 80px;
+    }
+    
+    .logo-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 50%;
+    }
+    
+    .logo {
+        position:absolute;
+        width:100%;
+        margin-top: 15px;
+        height: 70px;
+    }
+    
+    @media (max-width: 640px) {
+      .logo {
+        height: 60px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .logo {
+        height: 50px;
+      }
+    }
+    
+    .support img{
+        max-height:100%;
+        max-width:100%;
+    }
+    
+    .logo img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 90%;
+        padding-bottom: 7px;
+    }
+    
+    footer {
+      background-color: #000000;
+      color: #FFF;
+      margin-top: 70px;
+      padding: 30px 0;
+    }
+    
+    .keynotes {
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+    
+    .keynotes dt {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      margin-left: 0;
+    }
+    
+    .keynotes dd {
+      margin-left: 2em;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    
+    .keynotes dd {
+      margin: 0.3em 2em;
+    }
+    
+    .keynotes p.title {
+      font-size: 130%;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 2em;
+      margin-bottom: 0;
+    }
+    
+    .keynotes p.speaker {
+      font-size: 130%;
+      margin-bottom: 0;
+    }
+    
+    .keynotes p.institution {
+      font-size: 115%;
+      color: #777;
+    }
+    
+    .keynotes img {
+      width: 200px;
+    }
+    
+    
+    .emelogo {
+      max-height: 47px;
+      margin-left: 0;
+    }
+    
+    table.fees {
+      margin: 2em 0;
+    }
+    
+    table.fees td, th {
+      padding: 0.5em;
+      border: 2px solid;
+    }
+    
+    
+    table.program_table {
+      margin: 2em 0;
+      width: 100%;
+      border: 2px solid #00a;
+    }
+    
+    table.program_table td {
+      border: 2px solid #000000;
+      padding: 1px 0.5em;
+    }
+    
+    table.program_table th {
+      padding: 0.5em;
+    }
+    
+    table.program_list {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    
+    table.program_list td {
+      padding-bottom: 0.5em;
+    }
+    
+    td.hora {
+      text-align: left;
+    }
+     
+    td.libre {
+      background-color: #eee;
+    }
+    
+    tr.horario td {
+      font-weight: bold;
+      padding-top: 1em;
+      padding-bottom: 0.5em;
+    }
+    
+    table.premieres {
+      margin-top: 1em;
+      font-size: 112%;
+    }
+    
+    td.star {
+      font-weight: bold;
+      padding-right: 1em;
+    
+    }
+    
+    @media (max-width: 640px) {
+      .emelogo {
+        height: 38px;
+      }
+    
+      .contact {
+        font-size: 105%;
+      }
+    
+      .map {
+          width: 100%
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .emelogo {
+        height: 30px;
+      }
+    }
+    
+    .contact {
+     font-size: 120%;
+     color: #d2d7dc;
+    }
+    
+    /* h1 default: 36px (257%)
+     * h2 default: 30px (214%)
+     * h3 default: 24px (171%)
+     * h4 default: 18px (128%)
+    */
+    
+    @media (max-width: 640px) {
+      h1 {
+      font-size: 213%;
+      }
+      h2 {
+      font-size: 300%;
+      }
+      h3 {
+      font-size: 157%;
+      }
+      h4 {
+      font-size: 124%;
+      }
+
+    
+      table.program_table {
+      font-size: 95%;
+      }
+    
+      table.program_list {
+      font-size: 95%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      h1 {
+      font-size: 191%;
+      }
+      h2 {
+      font-size: 173%;
+      }
+      h3 {
+      font-size: 150%;
+      }
+      h4 {
+      font-size: 122%;
+      }
+    
+      table.program_table {
+      font-size: 90%;
+      }
+    
+      table.program_list {
+      font-size: 90%;
+      }
+    }
+    
