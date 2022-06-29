@@ -206,7 +206,7 @@ body {
       color: #FFF;
     }
     /*change this to bgimg*/
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
       position: relative;
       opacity: 0.65;
       background-attachment: fixed;
@@ -239,6 +239,11 @@ body {
       background-image: url("../img/Cabbage_mince.JPG");
       min-height: 400px;
     }
+
+    .bgimg-6 {
+      background-image: url("../img/AIT_C.JPG");
+      min-height: 400px;
+    }
     
     .caption {
       position: absolute;
@@ -256,6 +261,7 @@ body {
       font-size: 65px;
       letter-spacing: 10px;
     }
+    
     
 
     /* Turn off parallax scrolling for tablets and phones */
@@ -452,7 +458,49 @@ body {
       padding-right: 1em;
     
     }
-    
+
+    @media (min-width: 768px){
+    .collapsible{
+      display:none;
+    }
+  }
+
+   @media (max-width: 767px){
+    .collapsible {
+      /*background-color: #777;
+      color: white;*/
+      cursor: pointer;
+      padding: 1%;
+      left:25%;
+      width: 50%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 18px;
+      position:absolute;
+      
+    }
+  }
+
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+
+    .biocontent{
+      text-align: justify;
+      font-size: 18px;
+    }
+
+/* I just added this and need to implement this correctly*/
+    @media (max-width: 767px) {
+      .biocontent {
+      padding: 10%;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+  }
+
     @media (max-width: 640px) {
       .emelogo {
         height: 38px;
