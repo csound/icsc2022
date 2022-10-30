@@ -97,7 +97,7 @@ body {
     }
     
     p.venue {
-      font-size: 120%;
+      font-size: 100%;
       text-align: left;
       margin-bottom: 1px;
     }
@@ -271,7 +271,15 @@ body {
   }
 } 
     .page-header h1 {
-      color: rgb(255, 255, 255);
+    background: url(../img/code.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #202020;
+    padding: 30px 0;
+    margin: 0;
+    margin-bottom: 40px;
+    color: #FFF;
     }
     
     @media (max-width: 1260px) {
